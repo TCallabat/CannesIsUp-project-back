@@ -1,0 +1,16 @@
+{
+    "cors": {
+        "address": "http://localhost:3000"
+    },
+    "server": {
+        "port": 8080
+    },
+    "email": {
+        "host": "smtp.mailtrap.io",
+        "port": 2525,
+        "secure": false,
+        "user": "b4cd0171dc1f1c",
+        "pass": "7d6f537448f55c",
+        "sender": "Cannes Is Up <adhesion@cannesisup.com>"
+    }
+}
