@@ -5,13 +5,13 @@ const sendEmail = require("../middleware/sendEmail")
 
 const directory = {
     displayAll: (req, res, next) => {
-        Member.find({ display: true })
+        Member.find({ status: "actif" })
             .then(data => res.status(200).json(data))
             .catch(error => res.status(404).json({ message: error }));
     },
 
     displayOne: (req, res, next) => {
-        Member.findOne({ display: true, _id: req.params.id })
+        Member.findOne({ status: "actif", _id: req.params.id })
             .then(data => res.status(200).json(data))
             .catch(error => res.status(404).json({ message: error }));
     },

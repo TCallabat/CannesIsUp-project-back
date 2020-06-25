@@ -36,7 +36,7 @@ const memberSchema = mongoose.Schema({
     paymentType: String,
     paymentStatus: { type: Boolean, default: false },
 
-    type: { type: String, default: "adherent" },
+    type: { type: Boolean, default: false },
     status: { type: String, default: "attente" },
     display: { type: Boolean, default: false }
 }, {
